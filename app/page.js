@@ -104,40 +104,42 @@ export default function Home() {
                   <hr />
                 </div>
                 <RadioBtn />
-                <div className="m-4">
-                  <Link
-                    href="https://dan.com/orders/checkout/fayapp.com?lease_to_own=yes&utm_campaign=LeaseToOwn&utm_category=BIN-LTO-STANDARD&utm_medium=parking&utm_source=.com&utm_term=fayapp.com&number_of_installments=60&cookie_settings=%7B%22performance%22%3Afalse%2C%22advertising%22%3Afalse%2C%22support%22%3Afalse%7D&cookie_permission=2025-01-17%2B13%3A39%3A37%2B%2B0100"
-                    target="_blank"
-                  >
-                    {" "}
-                    <div className="flex justify-center text-xl font-medium bg-emerald-500 py-4 rounded-lg gap-3 items-center hover:bg-emerald-600 hover:text-white">
-                      Next <LuArrowRight />
+                <div>
+                  <div className="m-4">
+                    <Link
+                      href="https://dan.com/orders/checkout/fayapp.com?lease_to_own=yes&utm_campaign=LeaseToOwn&utm_category=BIN-LTO-STANDARD&utm_medium=parking&utm_source=.com&utm_term=fayapp.com&number_of_installments=60&cookie_settings=%7B%22performance%22%3Afalse%2C%22advertising%22%3Afalse%2C%22support%22%3Afalse%7D&cookie_permission=2025-01-17%2B13%3A39%3A37%2B%2B0100"
+                      target="_blank"
+                    >
+                      {" "}
+                      <div className="flex justify-center text-xl font-medium bg-emerald-500 py-4 rounded-lg gap-3 items-center hover:bg-emerald-600 hover:text-white">
+                        Next <LuArrowRight />
+                      </div>
+                    </Link>
+                  </div>
+                  <hr />
+                  <div className="p-4">
+                    <div className="flex items-center gap-1">
+                      <IoMdCheckmark className="text-emerald-500 text-xl" />
+                      <span className="text-emerald-500 font-medium">Free</span>
+                      Ownership transfer
                     </div>
-                  </Link>
-                </div>
-                <hr />
-                <div className="p-4">
-                  <div className="flex items-center gap-1">
-                    <IoMdCheckmark className="text-emerald-500 text-xl" />
-                    <span className="text-emerald-500 font-medium">Free</span>
-                    Ownership transfer
+                    <div className="flex items-center gap-1">
+                      <IoMdCheckmark className="text-emerald-500 text-xl" />
+                      <span className="text-emerald-500 font-medium">Free</span>
+                      Transaction support
+                    </div>
+                    <div className="flex items-center gap-1">
+                      <IoMdCheckmark className="text-emerald-500 text-xl font-medium" />
+                      Secure payments
+                    </div>
                   </div>
-                  <div className="flex items-center gap-1">
-                    <IoMdCheckmark className="text-emerald-500 text-xl" />
-                    <span className="text-emerald-500 font-medium">Free</span>
-                    Transaction support
+                  <div className="px-4 py-2 flex justify-center">
+                    <Image
+                      src={Payment_methods}
+                      className="img-fluid"
+                      alt="Payment_methods"
+                    />
                   </div>
-                  <div className="flex items-center gap-1">
-                    <IoMdCheckmark className="text-emerald-500 text-xl font-medium" />
-                    Secure payments
-                  </div>
-                </div>
-                <div className="px-4 py-2 flex justify-center">
-                  <Image
-                    src={Payment_methods}
-                    className="img-fluid"
-                    alt="Payment_methods"
-                  />
                 </div>
               </div>
             </div>
