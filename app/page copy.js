@@ -66,7 +66,7 @@ export default function Home() {
           </div>
         </div>
       </header>
-      <section className="hero-section bg-[#00112c] -z-10 h-[460px] md:h-80">
+      <section className="hero-section bg-[#00112c] -z-10 h-96 md:h-80">
         <div className="container max-w-6xl pt-16 md:pt-10 lg:pt-16 pb-10 px-5 md:px-20 2xl:px-0">
           <div className="md:flex justify-between w-full">
             <div className="w-full 2xl:w-2/3">
@@ -180,7 +180,7 @@ export default function Home() {
                     Secure payments
                   </div>
                 </div>
-                <div className="px-4 py-2 flex justify-center">
+                <div className="px-4 py-2">
                   <Image
                     src={Payment_methods}
                     className="img-fluid"
@@ -190,31 +190,29 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
-        <div className="our-features md:hidden">
-          <div className="container max-w-6xl pt-5 md:pt-10 lg:pt-20 pb-10 px-5 md:px-20 2xl:px-0">
-            <div className="md:hidden">
-              <div className="flex gap-3 items-center text-white">
-                <div className="bg-[#596f62] p-2 rounded-2xl text-3xl font-light">
-                  DS
-                </div>
-                <div className="">
-                  <div className="text-black">Listed by</div>
-                  <div className="text-black">
-                    <strong>Domain Seller</strong>
-                  </div>
+          <div className="block md:hidden">
+            <div className="flex gap-3 items-center text-white mt-8 ">
+              <div className="bg-[#596f62] p-2 rounded-2xl text-3xl font-light">
+                DS
+              </div>
+              <div className="">
+                <div className="text-black">Listed by</div>
+                <div className="text-black">
+                  <strong>Domain Seller</strong>
                 </div>
               </div>
             </div>
-            <div className="py-10">
+            <div className="my-10">
               <hr />
             </div>
+          </div>
+          <div className="block md:hidden">
             <div className="md:flex justify-between w-full">
               <div className="w-full 2xl:w-2/3 hidden xl:block">
                 <div className="md:flex gap-14">
-                  <div>
+                  <div className="">
                     <div className="flex justify-center">
-                      <Image src={FeatureIcon_1} />
+                      <Image src={FeatureIcon_1} className="" />
                     </div>
                     <div className="text-center mt-5 max-w-40 font-semibold text-lg">
                       Buyer Protection program
@@ -244,146 +242,31 @@ export default function Home() {
               <div className="w-full 2xl:w-2/3 xl:hidden">
                 <div className="">
                   <div className="flex items-center py-3">
-                    <div className="flex justify-center h-10 w-10">
-                      <Image src={FeatureIcon_1} className="pe-3" />
+                    <div className="h-10 w-10">
+                      <Image src={FeatureIcon_1} />
                     </div>
-                    <div className="text-center font-semibold text-lg">
+                    <div className="ps-6 text-center font-semibold text-lg">
                       Buyer Protection program
                     </div>
                   </div>
                   <div className="flex items-center py-3">
-                    <div className="flex justify-center h-10 w-10">
-                      <Image src={FeatureIcon_2} className="pe-3" />
+                    <div className="h-10 w-10">
+                      <Image src={FeatureIcon_2} />
                     </div>
-                    <div className="text-center font-semibold text-lg">
+                    <div className="ps-6 text-center font-semibold text-lg">
                       Fast & easy transfers
                     </div>
                   </div>
                   <div className="flex items-center">
-                    <div className="flex justify-center h-10 w-10">
-                      <Image src={FeatureIcon_3} className="pe-3" />
-                    </div>
-                    <div className="text-center font-semibold text-lg">
-                      Fast & easy transfers
-                    </div>
-                  </div>
-                </div>
-                <div className="my-10 w-full md:max-w-80 2xl:max-w-2xl">
-                  <hr />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="container max-w-6xl px-5 md:px-20 2xl:px-0">
-          <div className="w-full md:w-1/2">
-            <div className="text-2xl font-bold">
-              The simple, safe way to buy domain names
-            </div>
-            <div className="font-light mt-1">
-              No matter what kind of domain you want to buy or lease, we make
-              the transfer simple and safe.
-            </div>
-            <div className="mt-4 mb-10 text-xl text-[#1AAFD0] hover:underline hover:text-[#1aafd0ab]">
-              <Link href="/" className="flex items-center">
-                Here’s how it works <LuArrowRight className="ms-2" />
-              </Link>
-            </div>
-          </div>
-        </div>
-        <div className="w-full bg-[#00112c] text-white py-10">
-          <div className="container max-w-6xl px-5 md:px-20 2xl:px-0">
-            <div className="md:flex justify-between">
-              <div className="text-xs tracking-wide font-normal w-full md:w-3/4 text-center md:text-start">
-                <Link href="/" className="hover:underline">
-                  Privacy policy
-                </Link>{" "}
-                ·{" "}
-                <Link href="/" className="hover:underline">
-                  Do not sell my personal information·Manage cookies
-                </Link>{" "}
-                ·{" "}
-                <Link href="/" className="hover:underline">
-                  Terms of use·Disclaimer
-                </Link>{" "}
-                ·{" "}
-                <Link href="/" className="hover:underline">
-                  {" "}
-                  Sitemap{" "}
-                </Link>
-                ·© 2024 Dan.com an Undeveloped BV subsidiary. All Rights
-                Reserved.
-              </div>
-              <div className="flex justify-center md:justify-end">
-                <Dropdown />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div className="our-features hidden md:block">
-          <div className="container max-w-6xl pt-20 md:pt-10 lg:pt-20 pb-10 px-5 md:px-20 2xl:px-0">
-            <div className="md:flex justify-between w-full">
-              <div className="w-full 2xl:w-2/3 hidden xl:block">
-                <div className="md:flex gap-14">
-                  <div>
-                    <div className="flex justify-center">
-                      <Image src={FeatureIcon_1} />
-                    </div>
-                    <div className="text-center mt-5 max-w-40 font-semibold text-lg">
-                      Buyer Protection program
-                    </div>
-                  </div>
-                  <div>
-                    <div className="flex justify-center">
-                      <Image src={FeatureIcon_2} />
-                    </div>
-                    <div className="text-center mt-5 max-w-40 font-semibold text-lg">
-                      Fast & easy transfers
-                    </div>
-                  </div>
-                  <div>
-                    <div className="flex justify-center">
+                    <div className="h-10 w-10">
                       <Image src={FeatureIcon_3} />
                     </div>
-                    <div className="text-center mt-5 max-w-40 font-semibold text-lg">
-                      Hassle free payments
-                    </div>
-                  </div>
-                </div>
-                <div className="my-8 max-w-xl">
-                  <hr />
-                </div>
-              </div>
-              <div className="w-full 2xl:w-2/3 xl:hidden">
-                <div className="">
-                  <div className="flex items-center py-3">
-                    <div className="flex justify-center h-10">
-                      <Image src={FeatureIcon_1} />
-                    </div>
-                    <div className="text-center font-semibold text-lg">
-                      Buyer Protection program
-                    </div>
-                  </div>
-                  <div className="flex items-center py-3">
-                    <div className="flex justify-center h-10">
-                      <Image src={FeatureIcon_2} />
-                    </div>
-                    <div className="text-center font-semibold text-lg">
-                      Fast & easy transfers
-                    </div>
-                  </div>
-                  <div className="flex items-center">
-                    <div className="flex justify-center h-10">
-                      <Image src={FeatureIcon_3} />
-                    </div>
-                    <div className="text-center font-semibold text-lg">
+                    <div className="ps-6 text-center font-semibold text-lg">
                       Fast & easy transfers
                     </div>
                   </div>
                 </div>
-                <div className="my-8 w-full md:max-w-80 2xl:max-w-2xl">
+                <div className="my-12 w-full md:max-w-80 2xl:max-w-2xl">
                   <hr />
                 </div>
               </div>
@@ -391,7 +274,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* <section className="our-features hidden md:block">
+      <section className="our-features -z-10 hidden md:block">
         <div className="container max-w-6xl pt-20 md:pt-10 lg:pt-20 pb-10 px-5 md:px-20 2xl:px-0">
           <div className="md:flex justify-between w-full">
             <div className="w-full 2xl:w-2/3 hidden xl:block">
@@ -458,8 +341,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section> */}
-      <section className="hidden">
+      </section>
+      <section>
         <div className="container max-w-6xl px-5 md:px-20 2xl:px-0">
           <div className="w-full md:w-1/2">
             <div className="text-2xl font-bold">
@@ -477,7 +360,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="footer hidden bg-[#00112c] py-10 text-white">
+      <section className="footer bg-[#00112c] py-10 text-white">
         <div className="container max-w-6xl px-5 md:px-20 2xl:px-0">
           <div className="md:flex justify-between">
             <div className="text-xs tracking-wide font-normal w-full md:w-3/4 text-center md:text-start">
