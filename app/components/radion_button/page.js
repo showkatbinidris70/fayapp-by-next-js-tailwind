@@ -1,15 +1,22 @@
 "use client";
+import Link from "next/link";
 import React, { useState } from "react";
 
 export default function RadioBtn() {
   const [selectedOption, setSelectedOption] = useState("checked");
+  const [isTextVisible, setIsTextVisible] = useState(false);
 
   const handleOptionChange = (event) => {
     setSelectedOption(event.target.value);
   };
+
+  const toggleTextVisibility = () => {
+    setIsTextVisible(!isTextVisible);
+  };
+
   return (
     <div>
-      <div className="flex justify-between items-center bg-teal-50 py-6">
+      <div className="flex justify-between items-center bg-[#e7f7fb] py-6">
         <div className="text-black text-xl font-semibold px-5 flex cursor-pointer">
           <input
             id="country-option-1"
@@ -34,27 +41,58 @@ export default function RadioBtn() {
       <div className="px-5">
         <hr />
       </div>
-      <div className="flex justify-between items-center bg-teal-50 py-6">
-        <div className="text-black text-xl font-semibold px-5 flex">
-          <input
-            id="country-option-2"
-            type="radio"
-            name="countries"
-            value="Lease to own"
-            checked={selectedOption === "Lease to own"}
-            onChange={handleOptionChange}
-            className="h-6 w-6 focus:ring-blue-30 cursor-pointer"
-          />
-          <label
-            htmlFor="country-option-2"
-            className="ml-2 block text-black text-xl font-semibold cursor-pointer"
+      <div className="bg-[#e7f7fb]">
+        <button onClick={toggleTextVisibility} className="">
+          <div className="flex justify-between items-center py-6">
+            <div className="text-black text-xl font-semibold px-5 flex cursor-pointer">
+              <input
+                id="country-option-2"
+                type="radio"
+                name="countries"
+                value="Lease to own"
+                checked={selectedOption === "Lease to own"}
+                onChange={handleOptionChange}
+                className="h-6 w-6 focus:ring-blue-30 cursor-pointer"
+              />
+              <label
+                htmlFor="country-option-2"
+                className="ml-2 block text-black text-xl font-semibold cursor-pointer"
+              >
+                Lease to own
+              </label>
+            </div>
+            <div className="text-emerald-500 text-xl font-semibold px-5 md:ms-12 cursor-pointer">
+              USD $109
+              <p
+                className="text-black text-xs font-light p-0 m-0 text-end"
+                style={{ marginBottom: "-10px;" }}
+              >
+                /month
+              </p>
+            </div>
+          </div>
+          {/* <p
+            className="text-black text-xs font-light p-0 m-0 text-end"
+            style={{ marginBottom: "-100px;", backgroundColor: "red" }}
           >
-            Lease to own
-          </label>
-        </div>
-        <div className="text-emerald-500 text-xl font-semibold px-5 cursor-pointer">
-          USD $109
-        </div>
+            /month
+          </p> */}
+        </button>
+        {isTextVisible && (
+          <div className="px-5 pb-4">
+            <p>Pick the price that matches your budget.</p>
+            <p className="pt-3 pb-2">Full ownership after 60 months</p>
+            <Link
+              href="/"
+              className="underline text-[#0000009d] hover:text-[#000000]"
+            >
+              More information
+            </Link>
+          </div>
+        )}
+      </div>
+      <div className="px-5">
+        <hr />
       </div>
     </div>
   );
