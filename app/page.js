@@ -10,6 +10,7 @@ import Payment_methods from "@/public/assets/images/payment-methods.png";
 import { LuArrowRight } from "react-icons/lu";
 import { IoMdCheckmark } from "react-icons/io";
 import Dropdown from "./components/page";
+import RadioBtn from "./components/radion_button/page";
 
 export default function Home() {
   return (
@@ -102,56 +103,7 @@ export default function Home() {
                 <div className="px-5">
                   <hr />
                 </div>
-                <div className="flex justify-between items-center bg-teal-50 py-6">
-                  <div className="text-black text-xl font-semibold px-5 flex">
-                    <input
-                      id="country-option-1"
-                      type="radio"
-                      name="countries"
-                      value="Germany"
-                      class="h-6 w-6  focus:ring-blue-300"
-                      aria-labelledby="country-option-1"
-                      aria-describedby="country-option-1"
-                    />
-                    <label
-                      for="country-option-1"
-                      class="ml-2 block text-black text-xl font-semibold"
-                    >
-                      Buy now
-                    </label>
-                  </div>
-                  <div className="text-emerald-500 text-xl font-semibold px-5">
-                    USD $5,000
-                  </div>
-                </div>
-                <div className="px-5">
-                  <hr />
-                </div>
-                <div className="flex justify-between items-center bg-teal-50 py-6">
-                  <div className="text-black text-xl font-semibold px-5 flex">
-                    <input
-                      id="country-option-2"
-                      type="radio"
-                      name="countries"
-                      value="Germany"
-                      class="h-6 w-6  focus:ring-blue-30"
-                      aria-labelledby="country-option-2"
-                      aria-describedby="country-option-2"
-                    />
-                    <label
-                      for="country-option-2"
-                      class="ml-2 block text-black text-xl font-semibold"
-                    >
-                      Lease to own
-                    </label>
-                  </div>
-                  <div className="text-emerald-500 text-xl font-semibold px-5">
-                    USD $109
-                  </div>
-                </div>
-                <div className="px-5">
-                  <hr />
-                </div>
+                <RadioBtn />
                 <div className="m-4">
                   <Link
                     href="https://dan.com/orders/checkout/fayapp.com?lease_to_own=yes&utm_campaign=LeaseToOwn&utm_category=BIN-LTO-STANDARD&utm_medium=parking&utm_source=.com&utm_term=fayapp.com&number_of_installments=60&cookie_settings=%7B%22performance%22%3Afalse%2C%22advertising%22%3Afalse%2C%22support%22%3Afalse%7D&cookie_permission=2025-01-17%2B13%3A39%3A37%2B%2B0100"
@@ -391,74 +343,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* <section className="our-features hidden md:block">
-        <div className="container max-w-6xl pt-20 md:pt-10 lg:pt-20 pb-10 px-5 md:px-20 2xl:px-0">
-          <div className="md:flex justify-between w-full">
-            <div className="w-full 2xl:w-2/3 hidden xl:block">
-              <div className="md:flex gap-14">
-                <div>
-                  <div className="flex justify-center">
-                    <Image src={FeatureIcon_1} />
-                  </div>
-                  <div className="text-center mt-5 max-w-40 font-semibold text-lg">
-                    Buyer Protection program
-                  </div>
-                </div>
-                <div>
-                  <div className="flex justify-center">
-                    <Image src={FeatureIcon_2} />
-                  </div>
-                  <div className="text-center mt-5 max-w-40 font-semibold text-lg">
-                    Fast & easy transfers
-                  </div>
-                </div>
-                <div>
-                  <div className="flex justify-center">
-                    <Image src={FeatureIcon_3} />
-                  </div>
-                  <div className="text-center mt-5 max-w-40 font-semibold text-lg">
-                    Hassle free payments
-                  </div>
-                </div>
-              </div>
-              <div className="my-8 max-w-xl">
-                <hr />
-              </div>
-            </div>
-            <div className="w-full 2xl:w-2/3 xl:hidden">
-              <div className="">
-                <div className="flex items-center py-3">
-                  <div className="flex justify-center h-10">
-                    <Image src={FeatureIcon_1} />
-                  </div>
-                  <div className="text-center font-semibold text-lg">
-                    Buyer Protection program
-                  </div>
-                </div>
-                <div className="flex items-center py-3">
-                  <div className="flex justify-center h-10">
-                    <Image src={FeatureIcon_2} />
-                  </div>
-                  <div className="text-center font-semibold text-lg">
-                    Fast & easy transfers
-                  </div>
-                </div>
-                <div className="flex items-center">
-                  <div className="flex justify-center h-10">
-                    <Image src={FeatureIcon_3} />
-                  </div>
-                  <div className="text-center font-semibold text-lg">
-                    Fast & easy transfers
-                  </div>
-                </div>
-              </div>
-              <div className="my-8 w-full md:max-w-80 2xl:max-w-2xl">
-                <hr />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
       <section className="hidden">
         <div className="container max-w-6xl px-5 md:px-20 2xl:px-0">
           <div className="w-full md:w-1/2">
@@ -477,34 +361,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="footer hidden bg-[#00112c] py-10 text-white">
-        <div className="container max-w-6xl px-5 md:px-20 2xl:px-0">
-          <div className="md:flex justify-between">
-            <div className="text-xs tracking-wide font-normal w-full md:w-3/4 text-center md:text-start">
-              <Link href="/" className="hover:underline">
-                Privacy policy
-              </Link>{" "}
-              ·{" "}
-              <Link href="/" className="hover:underline">
-                Do not sell my personal information·Manage cookies
-              </Link>{" "}
-              ·{" "}
-              <Link href="/" className="hover:underline">
-                Terms of use·Disclaimer
-              </Link>{" "}
-              ·{" "}
-              <Link href="/" className="hover:underline">
-                {" "}
-                Sitemap{" "}
-              </Link>
-              ·© 2024 Dan.com an Undeveloped BV subsidiary. All Rights Reserved.
-            </div>
-            <div className="flex justify-center md:justify-end">
-              <Dropdown />
-            </div>
-          </div>
-        </div>
-      </section>
+      <section></section>
     </main>
   );
 }
