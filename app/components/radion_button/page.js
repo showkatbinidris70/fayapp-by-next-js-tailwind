@@ -86,7 +86,7 @@ export default function RadioBtn() {
               Pick the price that matches your budget.
             </p>
             <div
-              className="p-2 rounded-md my-2 bg-white"
+              className="p-2 rounded-md mt-2 bg-white"
               style={{ border: "1px solid #8795AA" }}
             >
               <div className="flex">
@@ -105,6 +105,7 @@ export default function RadioBtn() {
                 </div>
               </div>
             </div>
+            <div class="arrow-down"></div>
             <div className="flex justify-between items-center my-3">
               <div className="bg-[#179DBA] rounded-lg">
                 <AiOutlineMinus className="m-2 text-white text-2xl" />
