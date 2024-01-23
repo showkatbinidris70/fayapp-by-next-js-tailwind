@@ -80,8 +80,30 @@ export default function RadioBtn() {
         </button>
         {isTextVisible && (
           <div className="px-5 pb-4">
-            <p>Pick the price that matches your budget.</p>
-            <p className="pt-3 pb-2">Full ownership after 60 months</p>
+            <p className="text-[#143860]">
+              Pick the price that matches your budget.
+            </p>
+            <div
+              className="p-2 rounded-md my-2 bg-white"
+              style={{ border: "1px solid #8795AA" }}
+            >
+              <div className="flex">
+                <div
+                  className="w-1/2"
+                  style={{ borderRight: "1px solid #8795AA" }}
+                >
+                  <h5 className="text-base font-medium">USD $109</h5>
+                  <h6 className="text-xs font-normal text-[#8795AA]">
+                    Monthly Payment
+                  </h6>
+                </div>
+                <div className="w-1/2 ps-2">
+                  <h5 className="text-base font-medium">60</h5>
+                  <h6 className="text-xs font-normal text-[#8795AA]">Months</h6>
+                </div>
+              </div>
+            </div>
+            <p className="pb-2">Full ownership after 60 months</p>
             <Link
               href="/"
               className="underline text-[#0000009d] hover:text-[#000000]"
