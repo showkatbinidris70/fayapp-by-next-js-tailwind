@@ -1,6 +1,8 @@
 "use client";
 import Link from "next/link";
 import React, { useState } from "react";
+import { AiOutlineMinus } from "react-icons/ai";
+import { FaPlus } from "react-icons/fa6";
 
 export default function RadioBtn() {
   const [selectedOption, setSelectedOption] = useState("checked");
@@ -101,6 +103,22 @@ export default function RadioBtn() {
                   <h5 className="text-base font-medium">60</h5>
                   <h6 className="text-xs font-normal text-[#8795AA]">Months</h6>
                 </div>
+              </div>
+            </div>
+            <div className="flex justify-between items-center my-3">
+              <div className="bg-[#179DBA] rounded-lg">
+                <AiOutlineMinus className="m-2 text-white text-2xl" />
+              </div>
+              <div>
+                <div class="progress-bar w-48">
+                  <div
+                    class="progress-bar-inner"
+                    style={{ width: "50%" }}
+                  ></div>
+                </div>
+              </div>
+              <div className="bg-[#179DBA] rounded-lg">
+                <FaPlus className="m-2 text-white text-2xl" />
               </div>
             </div>
             <p className="pb-2">Full ownership after 60 months</p>
