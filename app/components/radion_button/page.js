@@ -107,18 +107,116 @@ export default function RadioBtn() {
             </div>
             <div class="arrow-down"></div>
             <div className="flex justify-between items-center my-3">
-              <div className="bg-[#179DBA] rounded-lg">
+              <div className="bg-[#1AAFD0] rounded-lg">
                 <AiOutlineMinus className="m-2 text-white text-2xl" />
               </div>
               <div>
-                <div class="progress-bar w-48">
+                {/* <div class="progress-bar w-48">
                   <div
                     class="progress-bar-inner"
-                    style={{ width: "50%" }}
+                    style={{ width: "60%" }}
                   ></div>
+                </div> */}
+                {/* <div className="slider-wrapper">
+                  <div className="range-slider">
+                    <div
+                      className="range-slider__bubble"
+                      style={{ left: "calc(100% - 13px)" }}
+                    >
+                      <input
+                        className="range-slider__range installmentCount"
+                        max="60"
+                        min="2"
+                        type="range"
+                        value="60"
+                      >
+                        60
+                      </input>
+                    </div>
+                    <svg
+                      fill="none"
+                      height="16"
+                      viewBox="0 0 24 12"
+                      width="12"
+                      xmlns="http://www.w3.org/200/svg"
+                    >
+                      <path
+                        d="M0.828426 -4L23.1716 -4C24.9534 -4 25.8457 -1.84572 24.5858 -0.58579L13.4142 10.5858C12.6332 11.3668 11.3668 11.3668 10.5858 10.5858L-0.585787 -0.585786C-1.84572 -1.84572 -0.953382 -4 0.828426 -4Z"
+                        fill="white"
+                        stroke="#8795AA"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div className="year-stops">
+                    <span className="year-stop" style={{ left: "-6px" }}></span>
+                    <span
+                      className="year-stop"
+                      style={{ left: "30.13881355932203px" }}
+                    ></span>
+                    <span
+                      className="year-stop"
+                      style={{ left: "73.50538983050848px" }}
+                    ></span>
+                    <span
+                      className="year-stop"
+                      style={{ left: "116.87196610169491px" }}
+                    ></span>
+                    <span
+                      className="year-stop"
+                      style={{ left: "160.23854237288137px" }}
+                    ></span>
+                    <span
+                      className="year-stop"
+                      style={{ left: "203.6051186440678px" }}
+                    ></span>
+                  </div>
+                </div> */}
+                <div class="w-64">
+                  <div class="row justify-content-center">
+                    <div class="">
+                      <div class="range-item">
+                        <div class="range-input d-flex position-relative">
+                          {/* <input
+                            type="range"
+                            min="0"
+                            max="18"
+                            class="form-range"
+                            name="dataShared"
+                            value="12"
+                          /> */}
+                          <div class="range-line">
+                            <span class="active-line"></span>
+                          </div>
+                          <div class="dot-line">
+                            <span class="active-dot"></span>
+                          </div>
+                        </div>
+                        {/* <ul class="list-inline list-unstyled">
+                          <li class="list-inline-item">
+                            <span></span>
+                          </li>
+                          <li class="list-inline-item">
+                            <span></span>
+                          </li>
+                          <li class="list-inline-item">
+                            <span></span>
+                          </li>
+                          <li class="list-inline-item">
+                            <span></span>
+                          </li>
+                          <li class="list-inline-item">
+                            <span></span>
+                          </li>
+                          <li class="list-inline-item">
+                            <span></span>
+                          </li>
+                        </ul> */}
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div className="bg-[#179DBA] rounded-lg">
+              <div className="bg-[#1AAFD0] rounded-lg">
                 <FaPlus className="m-2 text-white text-2xl" />
               </div>
             </div>
